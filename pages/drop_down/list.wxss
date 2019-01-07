@@ -1,0 +1,7 @@
+/* pages/drop_down/list.wxss */
+.article-item{
+  padding-left: 20rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  border: 1rpx dashed lightgray;
+}

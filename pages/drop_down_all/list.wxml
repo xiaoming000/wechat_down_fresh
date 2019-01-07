@@ -1,0 +1,10 @@
+<!--pages/drop_down_all/list.wxml-->
+<view wx:for="{{list}}" wx:for-item="article">
+  <view class='article-item'>{{article.id}}  :  {{article.title}}</view>
+</view>
+<view class='article-item' id='tip' style='text-align:center;'>
+  第{{page}}页，上拉继续加载,共{{num}}页
+</view>
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>

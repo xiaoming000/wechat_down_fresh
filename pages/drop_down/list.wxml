@@ -1,0 +1,15 @@
+<!--pages/drop_down/list.wxml-->
+<view wx:if="{{page == num ? false : true}}">
+  <view wx:for="{{list}}" wx:for-item="article">
+    <view class='article-item'>{{article.id}}  :  {{article.title}}</view>
+  </view>
+  <view class='article-item' id='tip' style='text-align:center;'>
+    第{{page}}页，上拉继续加载,共{{num}}页
+    </view>
+</view>
+<view wx:else>
+  <view>{{list}}</view>
+  <view class='article-item' id='tip' style='text-align:center;'>
+    已经到底部啦！
+    </view>
+</view>
